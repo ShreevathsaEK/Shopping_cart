@@ -4,83 +4,178 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/Shopping_Cart/CSS/home.css">
+
 </head>
- <style>
-    .name{
-
-    flex-direction: row;
-    position: relative;
-    display: inline-flex;
-    margin-top: 10px;
-    padding: 10px;
-    
-}
- </style>
- <style>
-    .me{
-    flex-direction: row;
-    position: relative;
-    display: inline-flex;
-    margin-top: 10px;
-    padding: 10px;
-}
- </style>
-
 <body>
-    <!--Header-->
-    <header>
-        <nav>
-            <a href="">Shopping Cart</a>
-        </nav>
-        <i class="bx bx-shopping-bag"></i>
-    </header>
-    <!--Shopping Section-->
-    <section>
-        <div>
-            <h2>Shopping Product</h2>
-            <!--Content-->
+    <nav>
+
+        <a href="/Shopping_Cart/HTML/index.html" class="brand">Shopping Cart</a>
+        <a href="/Shopping_Cart/HTML/cart.html" class="c">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16" id="cart">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg>
+        </a>
+    </nav>
+
+    <div class="container m-3">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-header">
+                            <img src="../images/bag.jpg" alt="" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <span style="font-size: 2em;">₹599</span>
+                            <button class="btn btn-outline-success" style="float: right; margin: 5px;">-</button>
+                            <button class="btn btn-outline-success" style="float: right; margin: 5px;">+</button> <br>
+                            <span style="font-size: 1em; font-weight: bolder;">Fasttrack</span> <br>
+                            <span>pinky's bag</span>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---->
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-header">
+                            <img src="../images/ballpointerpens.jpg" alt="" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <span style="font-size: 2em;">₹70</span>
+                            <button class="btn btn-outline-success" style="float: right; margin: 5px;">-</button>
+                            <button class="btn btn-outline-success" style="float: right; margin: 5px;">+</button> <br>
+                            <span style="font-size: 1em; font-weight: bolder;">parker pen</span> <br>
+                            <span>Mpack 6 ball pointer pen</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!----->
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-header">
+                            <img src="../images/belt.jpg" alt="" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <span style="font-size: 2em;">₹419</span>
+                            <button class="btn btn-outline-success" style="float: right; margin: 5px;">-</button>
+                            <button class="btn btn-outline-success" style="float: right; margin: 5px;">+</button> <br>
+                            <span style="font-size: 1em; font-weight: bolder;">peter england</span> <br>
+                            <span>formal belt</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!----->
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-header">
+                            <img src="../images/book.jpg" alt="" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <span style="font-size: 2em;">₹79</span>
+                            <button class="btn btn-outline-success" style="float: right; margin: 5px;">-</button>
+                            <button class="btn btn-outline-success" style="float: right; margin: 5px;">+</button> <br>
+                            <span style="font-size: 1em; font-weight: bolder;">classmate</span> <br>
+                            <span>200 page unruled book</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div class="name">
-        <div >
-            <img src="../images/bag.jpg" alt="Image Not Found"/>
-            <h3>Pinky's Bag</h3>
-            <span>rupee 699</span>
-            <i class="bx bx-shopping-bag"></i>
-        </div>
-        <div  >
-            <img src="../images/ballpointerpens.jpg" alt="Image Not Found"/>
-            <h3>Ball (pack of 5)</h3>
-            <span>rupee 69</span>
-            <i class="bx bx-shopping-bag"></i>
-        </div>
-        <div >
-            <img src="../images/belt.jpg" alt="Image Not Found"/>
-            <h3>Belt</h3>
-            <span>rupee 999</span>
-            <i class="bx bx-shopping-bag"></i>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-header">
+                            <img src="../images/helmet.jpg" alt="" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <span style="font-size: 2em;">₹4999</span>
+                            <button class="btn btn-outline-success" style="float: right; margin: 5px;">-</button>
+                            <button class="btn btn-outline-success" style="float: right; margin: 5px;">+</button> <br>
+                            <span style="font-size: 1em; font-weight: bolder;">vega</span> <br>
+                            <span>Mens classic helmet</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---->
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-header">
+                            <img src="../images/latop.jpg" alt="" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <span style="font-size: 2em;">₹79999</span>
+                            <button class="btn btn-outline-success" style="float: right; margin: 5px;">-</button>
+                            <button class="btn btn-outline-success" style="float: right; margin: 5px;">+</button> <br>
+                            <span style="font-size: 1em; font-weight: bolder;">hp</span> <br>
+                            <span>HP pavillion 15</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!----->
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-header">
+                            <img src="../images/phone.jpg" alt="" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <span style="font-size: 2em;">₹180999</span>
+                            <button class="btn btn-outline-success" style="float: right; margin: 5px;">-</button>
+                            <button class="btn btn-outline-success" style="float: right; margin: 5px;">+</button> <br>
+                            <span style="font-size: 1em; font-weight: bolder;">ASUS</span> <br>
+                            <span>Asus rog ultimate 5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!----->
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-header">
+                            <img src="../images/shoe.jpg" alt="" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <span style="font-size: 2em;">₹1619</span>
+                            <button class="btn btn-outline-success" style="float: right; margin: 5px;">-</button>
+                            <button class="btn btn-outline-success" style="float: right; margin: 5px;">+</button> <br>
+                            <span style="font-size: 1em; font-weight: bolder;">Golden</span> <br>
+                            <span>Mens Golden shoes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
-    <div class="me">
-        <div  class="p4">
-            <img src="../images/book.jpg" alt="Image Not Found"/>
-            <h3>book</h3>
-            <span>rupee 39</span>
-            <i class="bx bx-shopping-bag"></i>
-        </div>
-        <div  class="p5">
-            <img src="../images/helmet.jpg" alt="Image Not Found"/>
-            <h3>Anti fog helmet</h3>
-            <span>rupee 6999</span>
-            <i class="bx bx-shopping-bag"></i>
-        </div>
-        <div  class="p6">
-            <img src="../images/latop.jpg" alt="Image Not Found"/>
-            <h3>Student laptop</h3>
-            <span>rupee 69999</span>
-            <i class="bx bx-shopping-bag"></i>
-        </div>
-    </div>
-    </section>
 </body>
+</html>
 </html>
