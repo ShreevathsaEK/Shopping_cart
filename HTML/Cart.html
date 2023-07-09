@@ -1,29 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="/Shopping_Cart/CSS/cart.css">
+    <title>Order-Now</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
 </head>
+
 <body>
-    <nav>
-        <ul class="d-flex justify-content-between list-unstyled  align-items-center">
-            <li>
-                <button class="btn btn-outline-dark" onclick="window.location.href = '/Shopping_Cart/HTML/index.html';">Back</button>
-            </li>
-            <li>
-                <a href="/Shopping_Cart/HTML/cart.html" class="brand">My Cart</a>
-            </li>
-            <li>
-                <a href="/Shopping_Cart/HTML/cart.html" class="c">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16" id="cart">
-                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                      </svg>
-                </a>
-            </li>
-        </ul>
-    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 text-center  p-1 text-danger">
+                <h2><u>My Shopping Cart</u></h2>
+            </div>
+            <div class="col-md-2 text-left text-danger p-4 ">
+                <i class='bx bx-exit'></i>
+                <a href="./Home.html" class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Home </a>
+            </div>
+        </div>
+    </div>
+    <div class="products-container">
+        <div class="product-item">
+                <img src="../images/bag.jpg" class="card-img-top ">
+                        <h5 class="card-title">Pink bag</h5>
+                        <div class="cart-price">₹799</div>
+                        <input type="number" class="cart-quantity" placeholder="Quantity"/>
+                        <div>Total</div>
+                        <div class="total-price">0</div>
+                        <button type="submit" class="btn btn-danger">add to cart</button>
+                        <i class="bx-bx-x-circle" id="close-cart"></i>
+                    </div>
+                    <div class="product-item">
+                            <img src="../images/ballpointerpens.jpg" class="card-img-top ">
+                                    <h5 class="card-title">ball pointer pen(stack of five)</h5>
+                                    <div class="cart-price">₹90</div>
+                                    <input type="number" class="cart-quantity" placeholder="Quantity"/>
+                                    <div>Total</div>
+                                    <div class="total-price">0</div>
+                                    <button type="submit" class="btn btn-danger">add to cart</button>
+                                    <i class="bx-bx-x-circle" id="close-cart"></i>
+                                </div>
+                                <div class="product-item">
+                                        <img src="../images/belt.jpg" class="card-img-top ">
+                                                <h5 class="card-title">Men's Formal belt</h5>
+                                                <div class="cart-price">₹1000</div>
+                                                <input type="number" class="cart-quantity" placeholder="Quantity"/>
+                                                <div>Total</div>
+                                                <div class="total-price">0</div>
+                                                <button type="submit" class="btn btn-danger">add to cart</button>
+                                                <i class="bx-bx-x-circle" id="close-cart"></i>
+                                            </div>
+                                            <div class="products-container">
+                                                <div class="product-item">
+                                                        <img src="../images/book.jpg" class="card-img-top ">
+                                                                <h5 class="card-title">classmate text book</h5>
+                                                                <div class="cart-price">₹300</div>
+                                                                <input type="number" class="cart-quantity" placeholder="Quantity"/>
+                                                                <div>Total</div>
+                                                                <div class="total-price">0</div>
+                                                                <button type="submit" class="btn btn-danger">add to cart</button>
+                                                                <i class="bx-bx-x-circle" id="close-cart"></i>
+                                                            </div>
+           
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
 </body>
 </html>
