@@ -1,52 +1,52 @@
 
-const tshirt = [
+const laptop = [
     {
         id: 1,
-        name: "Shirt",
-        image: "https://m.media-amazon.com/images/I/619F3i6cEEL._AC_UX679_.jpg",
-        price: 220,
+        name: "Lenovo IdeaPad Slim 3",
+        image: "https://m.media-amazon.com/images/I/61Dw5Z8LzJL._SX679_.jpg",
+        price: 31999,
         quantity: 0
     },
     {
         id: 2,
-        name: "Shirt",
-        image: "https://images-na.ssl-images-amazon.com/images/I/71-NifIxOiL._UL1302_.jpg",
-        price: 120,
+        name: "HP 15s-Fq3071TU Intel Celeron",
+        image: "https://img3.gadgetsnow.com/gd/images/products/additional/large/G448534_View_1/computer-laptop/laptops/hp-15s-fq3071tu-intel-celeron-n4500-15-6-inches-entertainment-laptop-8gb-512gb-ssd-windows-11-natural-silver-1-69-kg-.jpg",
+        price: 32490,
         quantity: 0
     },
     {
         id: 3,
-        name: "Shirt",
-        image: "https://www.bootbarn.com/on/demandware.static/-/Sites-master-product-catalog-shp/default/dwa472b2fd/images/655/2000284655_410_P4.JPG",
-        price: 300,
+        name: "Samsung Galaxy Book2 Pro",
+        image: "https://images.samsung.com/is/image/samsung/p6pim/in/np930xed-kb2in/gallery/in-galaxy-book2-pro-13inch-np930xeda-417479-np930xed-kb2in-thumb-532813280?imwidth=480",
+        price: 108999,
         quantity: 0
     },
     {
         id: 4,
-        name: "Shirt",
-        image: "https://i5.walmartimages.com/asr/ec36f442-4732-4ced-b153-03eaf8dfc3da_1.ef84a28a9689a50ff7c3b686db549035.jpeg",
-        price: 100,
+        name: "Microsoft Surface Go Intel Core i5",
+        image: "https://m.media-amazon.com/images/I/51tUzSUFd+L._SX679_.jpg",
+        price: 84999,
         quantity: 0
     },
     {
         id: 5,
-        name: "Shirt",
-        image: "https://www.gamingcypher.com/wp-content/uploads/2017/01/Ghost-Recon-Hybrid-Dress-Shirt.jpg",
-        price: 100,
+        name: "hp envy",
+        image: "https://rukminim2.flixcart.com/image/416/416/l2ghgnk0/computer/v/3/7/-original-imagdsjsjszc65fh.jpeg?q=70",
+        price: 79500,
         quantity: 0
     },
     {
         id: 6,
-        name: "Shirt",
-        image: "https://imgcdn.carhartt.com/is/image/Carhartt/104368_BKC?fit=constrain,1&wid=798&hei=800&fmt=jpg",
-        price: 100,
+        name: "Asus tuf A 15",
+        image: "https://m.media-amazon.com/images/I/91zVSkGGZbS._SL1500_.jpg",
+        price: 74999,
         quantity: 0
     },
     {
         id: 7,
-        name: "Shirt",
-        image: "https://aws.atomretro.com/products/1400/ben-sherman-twisted-wheel-kelp-front.jpg",
-        price: 150,
+        name: "Asus vivabook pro 14",
+        image: "https://m.media-amazon.com/images/I/41oiOXKJ4NL.jpg",
+        price: 49999,
         quantity: 0
     }
 ];
@@ -69,14 +69,14 @@ function retrieveCartItems() {
 }
 
 function renderProductCards() {
-    const productList = document.getElementById("tshirt-list");
+    const productList = document.getElementById("laptop-list");
     if (!productList) return;
 
     productList.innerHTML = "";
 
-    const alltshirt = [...tshirt];
+    const alllaptop = [...laptop];
 
-    alltshirt.forEach(product => {
+    alllaptop.forEach(product => {
         const card = document.createElement("div");
         card.classList.add("col-lg-3", "col-md-4", "col-sm-6", "mb-4");
         card.innerHTML = `
@@ -94,9 +94,9 @@ function renderProductCards() {
 
 
         if (product instanceof Object && product.id >= 9 && product.id <= 16) {
-            const tshirtlist = document.getElementById("tshirt-list");
-            if (tshirtlist) {
-                tshirtlist.appendChild(card);
+            const laptoplist = document.getElementById("laptop-list");
+            if (laptoplist) {
+                laptoplist.appendChild(card);
             }
         } else {
             productList.appendChild(card);
@@ -116,7 +116,7 @@ function addToCart(event) {
     if (existingCartItem) {
         existingCartItem.quantity++;
     } else {
-        const product = [...tshirt].find(item => item.id === productId);
+        const product = [...laptop].find(item => item.id === productId);
         cartItems.push({ ...product, quantity: 1 });
     }
 
