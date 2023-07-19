@@ -1,0 +1,27 @@
+#cart{
+    float:right;
+    height: 2em;
+    width: auto;
+    margin:1%;
+}
+
+.brand{
+    font-weight: bolder;
+}
+
+nav{
+    background-color: #0097B2;
+}
+.c{
+    color: black;
+    text-decoration: none;
+}
+
+.total{
+    width: 15em ;
+    height: 20em;
+    float: right;
+    margin: 3em;
+    outline: 0.2em solid rgb(152, 152, 152);
+    border-radius: 0.1em;
+}
